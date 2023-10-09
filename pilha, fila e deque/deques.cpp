@@ -50,7 +50,7 @@ class Deque {
             size++;
         }
 
-        void pop_head_queue() {
+        void pop_head_deque() {
             if (size == 0) {
                 return;  
             }
@@ -61,7 +61,7 @@ class Deque {
             size--;
         }
 
-        void pop_tail_queue() {
+        void pop_tail_deque() {
             if (size == 0) {
                 return;  
             }
@@ -72,7 +72,7 @@ class Deque {
             size--;
         }
 
-        char get_head_queue() {
+        char get_head_deque() {
             if (size == 0) {
                 cout << "Deque vazio" << endl;  
                 return '\0';
@@ -80,7 +80,7 @@ class Deque {
             return head->value;
         }
 
-        char get_tail_queue() {
+        char get_tail_deque() {
             if (size == 0) {
                 cout << "Deque vazio" << endl;  
                 return '\0';           
@@ -186,11 +186,11 @@ void test_deque() {
 
     cout << "Tamanho do deque: " << deque.get_size_deque() << endl;
 
-    cout << "Head do deque: " << deque.get_head_queue() << endl;
-    cout << "Tail do deque: " << deque.get_tail_queue() << endl;
+    cout << "Head do deque: " << deque.get_head_deque() << endl;
+    cout << "Tail do deque: " << deque.get_tail_deque() << endl;
 
-    deque.pop_head_queue();
-    deque.pop_tail_queue();
+    deque.pop_head_deque();
+    deque.pop_tail_deque();
 
     cout << "Tamanho do deque: " << deque.get_size_deque() << endl;
 
